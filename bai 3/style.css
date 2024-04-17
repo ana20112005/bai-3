@@ -1,0 +1,93 @@
+/* Body Styling */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Removed height: 100vh to allow for scrolling */
+    background-color: #f2f2f2; /* Light gray background color */
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center the content horizontally */
+    align-items: flex-start; /* Align content at the top for scrolling */
+}
+
+/* Container Styling */
+.container {
+    display: flex;
+    width: 100%;
+    /* Removed height: 100% to allow for scrolling */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-direction: row; /* Default flex direction is row */
+}
+
+/* Left Section Styling */
+.left-section {
+    flex: 1;
+    padding: 40px;
+    background-color: #D9E4DD; /* Light green background */
+    border-right: 2px solid #f0f0f0; /* Light gray border */
+}
+
+/* Right Section Styling */
+.right-section {
+    flex: 1;
+    padding: 40px;
+    background-color: #F0E5D8; /* Light peach background */
+    position: relative; /* Allow absolute positioning within the section */
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    color: #007BFF;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+social-links a {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #0056b3;
+}
+
+/* Logo Styles */
+.logo img {
+    height: 60px; /* Logo height */
+    margin-right: 20px; /* Add space between logos */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .left-section, .right-section {
+        width: 100%; /* Full width in column layout */
+        border-right: none;
+    }
+}
